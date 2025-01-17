@@ -1,4 +1,4 @@
-public class DiscoQueEscribe extends DiscoQueAlmacena {
+public abstract class DiscoQueEscribe extends DiscoQueAlmacena {
     private double velocidadEscritura;
 
     //CONSTRUCTOR
