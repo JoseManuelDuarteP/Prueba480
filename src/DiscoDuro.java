@@ -1,4 +1,4 @@
-public class DiscoDuro extends Dispositivo {
+public class DiscoDuro extends Disco {
 
     public DiscoDuro(String nombre, int capacidad, double velocidadLectura, double velocidadEscritura, String tipo, String contenido) {
         super(nombre, capacidad, velocidadLectura, velocidadEscritura, tipo, contenido);
@@ -11,7 +11,7 @@ public class DiscoDuro extends Dispositivo {
 
     @Override
     public void leer() {
-        System.out.println(this.getNombre() + " escribe con cabezal magnético.");
+        System.out.println(this.getNombre() + " lee con cabezal magnético.");
     }
 
 }

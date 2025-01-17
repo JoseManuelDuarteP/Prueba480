@@ -1,4 +1,4 @@
-public abstract class Dispositivo {
+public abstract class Disco {
     private String nombre;
     private int capacidad;
     private double velocidadLectura;
@@ -6,7 +6,7 @@ public abstract class Dispositivo {
     private String tipo;
     private String contenido;
 
-    public Dispositivo
+    public Disco
             (String nombre, int capacidad, double velocidadLectura , double velocidadEscritura, String tipo, String contenido) {
         this.nombre = nombre;
         this.capacidad = capacidad;
@@ -73,16 +73,16 @@ public abstract class Dispositivo {
     //METODOS AQUÍ
 
     public void girar() {
-        System.out.println(this.nombre + " girando");
+        System.out.println(getContenido() + " girando");
     }
 
     public void almacenar() {
         System.out.println(this.nombre + " almacena " + this.capacidad + " GB");
     }
 
-    public abstract void escribir();
+    public void escribir() {}
 
-    public abstract void leer();
+    public void leer() {}
 
     public void informar() {
         System.out.println("Nombre: " + this.nombre + "\n Capacidad: " + this.capacidad + " GB"

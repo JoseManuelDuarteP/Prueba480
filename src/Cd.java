@@ -1,4 +1,4 @@
-public class Cd extends Dispositivo {
+public class Cd extends Disco {
 
     public Cd(String nombre, int capacidad, double velocidadLectura, double velocidadEscritura, String tipo, String contenido) {
         super(nombre, capacidad, velocidadLectura, velocidadEscritura, tipo, contenido);
