@@ -1,7 +1,7 @@
-public class DiscoDuro extends Disco {
+public class DiscoDuro extends DiscoQueEscribe {
 
-    public DiscoDuro(String nombre, int capacidad, double velocidadLectura, double velocidadEscritura, String tipo, String contenido) {
-        super(nombre, capacidad, velocidadLectura, velocidadEscritura, tipo, contenido);
+    public DiscoDuro(String nombre, String tipo, int capacidad, double velocidadLectura, double velocidadEscritura, String contenido) {
+        super(nombre, tipo, capacidad, velocidadLectura, velocidadEscritura, contenido);
     }
 
     @Override

@@ -1,7 +1,7 @@
-public class Vinilo extends Disco {
+public class Vinilo extends DiscoQueAlmacena {
 
-    public Vinilo(String nombre, int capacidad, double velocidadLectura, double velocidadEscritura, String tipo, String contenido) {
-        super(nombre, capacidad, velocidadLectura, velocidadEscritura, tipo, contenido);
+    public Vinilo(String nombre, String tipo, int capacidad, double velocidadLectura, String contenido) {
+        super(nombre, tipo, capacidad, velocidadLectura, contenido);
     }
 
     @Override
@@ -18,7 +18,6 @@ public class Vinilo extends Disco {
     public void informar() {
         System.out.println("Nombre: " + this.getNombre() + "\n Capacidad: " + this.getCapacidad() + " minutos de música"
                 + "\n Velocidad de lectura: " + this.getVelocidadLectura() + "RPM"
-                + "\n Velocidad de escritura: " + this.getVelocidadEscritura() + "RPM"
                 + "\n Tipo: " + this.getTipo() + "\n Contenido: " + this.getContenido());
     }
 }

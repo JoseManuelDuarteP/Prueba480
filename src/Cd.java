@@ -1,7 +1,8 @@
-public class Cd extends Disco {
+public class Cd extends DiscoQueEscribe {
 
-    public Cd(String nombre, int capacidad, double velocidadLectura, double velocidadEscritura, String tipo, String contenido) {
-        super(nombre, capacidad, velocidadLectura, velocidadEscritura, tipo, contenido);
+
+    public Cd(String nombre, String tipo, int capacidad, double velocidadLectura, double velocidadEscritura, String contenido) {
+        super(nombre, tipo, capacidad, velocidadLectura, velocidadEscritura, contenido);
     }
 
     @Override
