@@ -1,17 +1,17 @@
 public class Cd extends Dispositivo {
 
-    public Cd(String nombre, int capacidad, double velocidadLectura, double velocidadEscritura, String tipo) {
-        super(nombre, capacidad, velocidadLectura, velocidadEscritura, tipo);
+    public Cd(String nombre, int capacidad, double velocidadLectura, double velocidadEscritura, String tipo, String contenido) {
+        super(nombre, capacidad, velocidadLectura, velocidadEscritura, tipo, contenido);
     }
 
     @Override
     public void escribir() {
-        System.out.println(getNombre() + " escribe con láser.");
+        System.out.println(this.getNombre() + " escribe con láser.");
     }
 
     @Override
     public void leer() {
-        System.out.println(getNombre() + " lee con láser.");
+        System.out.println(this.getNombre() + " lee con láser.");
     }
 
 }

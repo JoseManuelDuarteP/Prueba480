@@ -4,14 +4,16 @@ public abstract class Dispositivo {
     private double velocidadLectura;
     private double velocidadEscritura;
     private String tipo;
+    private String contenido;
 
     public Dispositivo
-            (String nombre, int capacidad, double velocidadLectura , double velocidadEscritura, String tipo) {
+            (String nombre, int capacidad, double velocidadLectura , double velocidadEscritura, String tipo, String contenido) {
         this.nombre = nombre;
         this.capacidad = capacidad;
         this.velocidadLectura = velocidadLectura;
         this.velocidadEscritura = velocidadEscritura;
         this.tipo = tipo;
+        this.contenido = contenido;
     }
 
     public String getNombre() {
@@ -46,12 +48,22 @@ public abstract class Dispositivo {
         this.velocidadEscritura = velocidadEscritura;
     }
 
+    //TIPO: CD, SSD, HDD...
+
     public String getTipo() {
         return tipo;
     }
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    public String getContenido() {
+        return contenido;
+    }
+
+    public void setContenido(String contenido) {
+        this.contenido = contenido;
     }
 
     public String toString() {
@@ -65,7 +77,7 @@ public abstract class Dispositivo {
     }
 
     public void almacenar() {
-        System.out.println(this.nombre + " almacena " + this.capacidad);
+        System.out.println(this.nombre + " almacena " + this.capacidad + " GB");
     }
 
     public abstract void escribir();
@@ -73,10 +85,10 @@ public abstract class Dispositivo {
     public abstract void leer();
 
     public void informar() {
-        System.out.println("Nombre: " + this.nombre + "\n Capacidad: " + this.capacidad
+        System.out.println("Nombre: " + this.nombre + "\n Capacidad: " + this.capacidad + " GB"
         + "\n Velocidad de lectura: " + this.velocidadLectura + "MB/s"
         + "\n Velocidad de escritura: " + this.velocidadEscritura + "MB/s"
-        + "\n Tipo: " + this.tipo);
+        + "\n Tipo: " + this.tipo + "\n Contenido: " + this.contenido);
     }
 
 }
