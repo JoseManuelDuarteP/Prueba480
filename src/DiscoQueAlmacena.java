@@ -45,7 +45,7 @@ public abstract class DiscoQueAlmacena extends Disco {
 
     public void informar() {
         System.out.println("Nombre: " + this.getNombre() + "\n Capacidad: " + this.capacidad + " GB"
-                + "\n Velocidad de lectura: " + this.velocidadLectura + "MB/s"
+                + "\n Velocidad de lectura: " + this.velocidadLectura + " MB/s"
                 + "\n Tipo: " + this.getTipo() + "\n Contenido: " + this.contenido);
     }
 

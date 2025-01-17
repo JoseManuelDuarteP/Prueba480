@@ -19,4 +19,12 @@ public class DiscoQueEscribe extends DiscoQueAlmacena {
     //METODOS
     public void escribir() {}
 
+    @Override
+    public void informar() {
+        System.out.println("Nombre: " + this.getNombre() + "\n Capacidad: " + this.getCapacidad() + " GB"
+                + "\n Velocidad de lectura: " + this.getVelocidadLectura() + " MB/s"
+                + "\n Velocidad de lectura: " + this.getVelocidadEscritura() + " MB/s"
+                + "\n Tipo: " + this.getTipo() + "\n Contenido: " + this.getContenido());
+    }
+
 }

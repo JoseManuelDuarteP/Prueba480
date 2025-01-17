@@ -17,7 +17,7 @@ public class Vinilo extends DiscoQueAlmacena {
     @Override
     public void informar() {
         System.out.println("Nombre: " + this.getNombre() + "\n Capacidad: " + this.getCapacidad() + " minutos de música"
-                + "\n Velocidad de lectura: " + this.getVelocidadLectura() + "RPM"
+                + "\n Velocidad de lectura: " + this.getVelocidadLectura() + " RPM"
                 + "\n Tipo: " + this.getTipo() + "\n Contenido: " + this.getContenido());
     }
 }
