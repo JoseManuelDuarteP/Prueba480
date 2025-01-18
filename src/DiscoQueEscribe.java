@@ -23,7 +23,7 @@ public abstract class DiscoQueEscribe extends DiscoQueAlmacena {
     public void informar() {
         System.out.println("Nombre: " + this.getNombre() + "\n Capacidad: " + this.getCapacidad() + " GB"
                 + "\n Velocidad de lectura: " + this.getVelocidadLectura() + " MB/s"
-                + "\n Velocidad de lectura: " + this.getVelocidadEscritura() + " MB/s"
+                + "\n Velocidad de escritura: " + this.getVelocidadEscritura() + " MB/s"
                 + "\n Tipo: " + this.getTipo() + "\n Contenido: " + this.getContenido());
     }
 
